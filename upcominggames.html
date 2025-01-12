@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="./css/upcominggames.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>        
+        <section ><img src="./images/logo4.png" id="logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li><a href="./consoles.html">Consoles</a></li>
+                    <li><a href="./peripherals.html">Peripherals</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main class="main-section">
+        <section class="text-container">
+            <h1>Upcoming Games</h1>
+            <p>As gamers, we are always excited about the future of the gaming world. The gaming industry is rapidly evolving, and at GameVault, we are committed to keeping you updated with the latest details about upcoming gaming titles. We actively provide information about new releases across various genres like action, adventure, RPG, sports, and more, as well as across all platforms. Our goal is to keep our store stocked with the newest titles as soon as they launch, so you can experience them without delay. Stay tuned for the latest releases and enjoy our exciting launch day offers!</p>
+        </section>
+        <section class="image-container">
+            <div class="new-game">
+                <img src="./images/newgame1.jpg" alt="game1">
+                <div class="date">Release Date: 20 December 2024</div>
+            </div>
+            <div class="new-game">
+                <img src="./images/newgame2.jpg" alt="game2">
+                <div class="date">Release Date: 30 December 2024</div>
+            </div>
+            <div class="new-game">
+                <img src="./images/newgame3.jpg" alt="game3">
+                <div class="date">Release Date: 10 January 2025</div>
+            </div>
+            <div class="new-game">
+                <img src="./images/newgame4.jpg" alt="game4">
+                <div class="date">Release Date: 20 January 2025</div>
+            </div>
+            <div class="new-game">
+                <img src="./images/newgame5.jpg" alt="game5">
+                <div class="date">Release Date: 30 January 2025</div>
+            </div>
+            <div class="new-game">
+                <img src="./images/newgame6.jpeg" alt="game6">
+                <div class="date">Release Date: 10 January 2025</div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                <li><a href="./consoles.html">Consoles</a></li>
+                <li><a href="./peripherals.html">Peripherals</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small></section>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>

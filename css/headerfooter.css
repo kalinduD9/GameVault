@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    max-height: 150px;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 10px;
+}
+
+.navbar ol {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ol li {
+    margin-left: 20px;
+}
+
+.navbar ol li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 13px;
+    border-radius: 15px;
+    background-color: #302f2f;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar ol li a:hover {
+    background-color: #1e90ff;
+    transform: scale(1.1);
+}
+
+.search-container input[type="text"] {
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container .search-button {
+    padding: 6px 15px;
+    margin-left: 10px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container .search-button:hover {
+    background-color: #187bcd;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 2px solid #444;
+}
+
+.menu-footer ol {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-footer ol li {
+    margin: 0 15px;
+}
+
+.menu-footer ol li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-footer ol li a:hover {
+    color: #1e90ff;
+}
+
+.contact-info {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #187bcd;
+}
+
+.social-media {
+    margin: 15px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Media Queries for Header - Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Hamburger Menu */
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Hide navbar and search-container initially */
+    .navbar, .search-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #222;
+        padding: 10px;
+    }
+
+    .search-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 95%;
+    }
+
+    .search-container .search-button{
+        width: 40%;
+        padding: 8px 15px;
+        background-color: #1e90ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        margin: 0;
+        transition: background-color 0.3s;
+    }
+
+    .search-container .search-button:hover {
+        background-color: #187bcd;
+    }            
+
+    /* Navbar Styles */
+    .navbar ol {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ol li {
+        margin: 10px 0;
+    }
+
+    /* Header Adjustments */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        max-height: 120px;
+    }
+
+    /* Show menu when active */
+    .menu.active .navbar,
+    .menu.active .search-container {
+        display: flex;
+    }
+}
+
+/* Responsive Adjustments for footer */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    .menu-footer ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-footer ol li {
+        margin: 10px 0;
+    }
+
+    #footer-logo {
+        max-height: 80px;
+    }
+}

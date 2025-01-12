@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>       
+        <section ><img src="./images/logo4.png" id="logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li><a href="./con&per.html">Consoles</a></li>
+                    <li><a href="./peripherals.html">Peripherals</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main class="content-grid">
+        <section class="main-section">
+            <div class="overlay">
+                <div class="text-container">
+                    <h1>Welcome to GameVault</h1>
+                    <p>GameVault is not just a store. we are a massive gaming hub. Are you a PC gamer or a Console gamer? it doesn’t matter because we have something for everyone. From newly released games to latest and most advance consoles and accessories we are ready to empower your experience. Join with us today and take your gaming experience to a whole new level.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small></section>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>

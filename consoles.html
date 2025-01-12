@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="./css/consoles.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>       
+        <section ><img src="./images/logo4.png" id="logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li><a href="./consoles.html">Consoles</a></li>
+                    <li><a href="./peripherals.html">Peripheral</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a> </li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+
+    <main class="product-grid">
+        <h1>Consoles</h1>
+        <div class="grid-container">
+            <div class="product-item">
+                <h2>PlayStation 5</h2>
+                <div class="image-container">
+                    <img src="./images/ps5.jpg" alt="PlayStation 5">
+                    <div class="price-overlay">$499.99</div>
+                </div>
+                <p>Sony PlayStation 5 Gaming Console</p>
+                <span class="category">Console</span>
+            </div>
+
+            <div class="product-item">
+                <h2>Xbox Series X</h2>
+                <div class="image-container">
+                    <img src="./images/xboxx.webp" alt="Xbox Series X">
+                    <div class="price-overlay">$479.99</div>
+                </div>
+                <p>Microsoft Xbox Series X 1TB Gaming Console</p>
+                <span class="category">Console</span>
+            </div>
+
+            <div class="product-item">
+                <h2>Nintendo Switch OLED</h2>
+                <div class="image-container">
+                    <img src="./images/nintendoswitch.jpg" alt="Nintendo Switch OLED">
+                    <div class="price-overlay">$349.99</div>
+                </div>
+                <p>Nintendo Switch OLED Model with Wider 7-inch Screen</p>
+                <span class="category">Console</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                <li><a href="./consoles.html">Consoles</a></li>
+                <li><a href="./peripherals.html">Peripherals</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small></section>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>
+

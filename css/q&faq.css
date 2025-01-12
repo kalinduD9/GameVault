@@ -1,0 +1,105 @@
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.faq-question {
+    color: #1e90ff;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+.contact-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.submit-button,
+.cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.submit-button:hover {
+    background-color: #0a4c81;
+}
+
+.cancel-button {
+    background-color: #444;
+    color: #fff;
+}
+
+.cancel-button:hover {
+    background-color: #dc3545;
+}
