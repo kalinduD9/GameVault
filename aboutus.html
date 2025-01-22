@@ -10,24 +10,29 @@
 </head>
 <body>
     <header>        
-        <section ><img src="./images/logo4.png" id="logo"></section>
+        <section ><img src="./images/logo.png" id="logo"></section>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+        </div>
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
         <nav class="menu">
-            <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit" class="search-button">Search</button>
-            </div>
             <div class="navbar">
                 <ol>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
                     <li><a href="./upcominggames.html">Upcoming Games</a></li>
-                    <li><a href="./consoles.html">Consoles</a></li>
-                    <li><a href="./peripherals.html">Peripherals</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                        </div>
+                    </li>
                     <li><a href="./games.html">Games</a></li>
                     <li><a href="./q&faq.html">Queries and FAQ</a></li> 
                 </ol>
@@ -35,113 +40,83 @@
         </nav>
     </header>
     <main>
-        <section id="branch1">
-            <h2>Downtown Branch</h2>
-            <article class="branch-content">
-                <div class="branch-map">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="branch-details">
-                    <img src="downtown-branch.jpg" alt="Downtown Branch">
-                    <h3>Opening Hours</h3>
-                    <ul>
-                        <li>Monday to Friday: 9 AM - 6 PM</li>
-                        <li>Saturday: 10 AM - 5 PM</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
-                    <p>The Downtown Branch offers a wide selection of seasonal products with personalized customer service. Ample parking space is available for visitors.</p>
-                </div>
-            </article>
+        <h1>About Us</h1>
+        <p>Welcome to GameVault! We are dedicated to bringing you the best gaming experience with top-notch consoles, peripherals, and games. Learn more about our branches below!</p>
+
+        <section class="branch">
+            <h2>GameVault Colombo</h2>
+            <div class="branch-content">
+                <img src="./images/store1.webp" alt="Colombo Branch">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1914143878812!2d79.8612288970114!3d6.918595306245593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d3cb8fe07%3A0x2b0ae2edd563a661!2sAsia%20Pacific%20Institute%20of%20Information%20Technology%20(APIIT)!5e0!3m2!1sen!2ssg!4v1736921079273!5m2!1sen!2ssg" 
+                loading="lazy">
+                </iframe>
+            </div>    
+            <div class="branch-info">
+                <p>Located in the heart of the city, GameVault Colombo is your go-to destination for the latest consoles and exclusive game releases. Our staff is always ready to assist you with your gaming needs. Also join with our gaming community to make new friends and enjoy fun and exiting events.</p>
+                <p><strong>Opening Hours:</strong></p> 
+                <p>Weekdays - 9:00 AM - 8:00 PM | Weekend - 9:00 AM - 5.30PM</p>
+            </div>
         </section>
 
-        <section id="branch2">
-            <h2>Main Street Branch</h2>
-            <article class="branch-content">
-                <div class="branch-map">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="branch-details">
-                    <img src="main-street-branch.jpg" alt="Main Street Branch">
-                    <h3>Opening Hours</h3>
-                    <ul>
-                        <li>Monday to Friday: 10 AM - 7 PM</li>
-                        <li>Saturday: 10 AM - 5 PM</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
-                    <p>The Main Street Branch specializes in clothing and electronics, with a trendy and modern atmosphere.</p>
-                </div>
-            </article>
+        <section class="branch">
+            <h2>GameVault Kandy</h2>
+            <div class="branch-content">
+                <img src="./images/store3.png" alt="Kandy Branch">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1464.7104402506584!2d80.62052542261272!3d7.280914159228676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3673f5e22ab3b%3A0xcbaef11262bec73!2sAPIIT%20Kandy%20Campus!5e0!3m2!1sen!2ssg!4v1736920197010!5m2!1sen!2ssg" 
+                loading="lazy">
+                </iframe>
+            </div>    
+            <div class="branch-info">
+                <p>Nestled in the suburbs, Gamer's Paradise offers a quieter shopping experience with the same great products. A must-visit for gamers in the area!</p>
+                <p><strong>Opening Hours:</strong></p>
+                <p>Weekdays - 9:00 AM - 8:00 PM | Weekend - 9:00 AM - 5:30 PM</p>
+            </div>
         </section>
 
-        <section id="branch3">
-            <h2>City Mall Branch</h2>
-            <article class="branch-content">
-                <div class="branch-map">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="branch-details">
-                    <img src="city-mall-branch.jpg" alt="City Mall Branch">
-                    <h3>Opening Hours</h3>
-                    <ul>
-                        <li>Monday to Friday: 9 AM - 9 PM</li>
-                        <li>Saturday: 10 AM - 6 PM</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
-                    <p>The City Mall Branch focuses on home goods and kitchenware. It is a perfect place for shopping and quick visits.</p>
-                </div>
-            </article>
-        </section>
-
-        <section class="summary-table">
-            <h2>Store Summary</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Downtown Branch</th>
-                        <th>Main Street Branch</th>
-                        <th>City Mall Branch</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Address</td>
-                        <td>123 Downtown St.</td>
-                        <td>456 Main St.</td>
-                        <td>789 City Mall Blvd.</td>
-                    </tr>
-                    <tr>
-                        <td>Opening Hours</td>
-                        <td>9 AM - 6 PM</td>
-                        <td>10 AM - 7 PM</td>
-                        <td>9 AM - 9 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Products Available</td>
-                        <td>Seasonal items, Gifts</td>
-                        <td>Clothing, Electronics</td>
-                        <td>Home goods, Kitchenware</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4">For more details, visit our contact page or call the nearest store location.</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+        <h2>Branch Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Branch Name</th>
+                    <th>Location</th>
+                    <th>Opening Hours</th>
+                    <th>Services</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GameVault Colombo</td>
+                    <td>No. 388 Union Pl, Colombo 00200, Sri Lanka</td>
+                    <td>
+                        Weekdays - 9:00 AM - 8:00 PM
+                        Weekend - 9:00 AM - 5.30PM
+                    </td>
+                    <td>Game Store, Game Center, Repair Services</td>
+                </tr>
+                <tr>
+                    <td>GameVault Kandy</td>
+                    <td>542 Peradeniya Rd, Kandy 20000, Sri Lanka</td>
+                    <td>
+                        Weekdays - 9:00 AM - 8:00 PM
+                        Weekend - 9:00 AM - 5:30 PM
+                    </td>
+                    <td>Game Store, Repair Services</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Visit us today for the ultimate gaming experience!</td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
     <footer>
         <section class="menu-footer">
             <ol>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="./upcominggames.html">Upcoming Games</a></li>
-                <li><a href="./consoles.html">Consoles</a></li>
-                <li><a href="./peripherals.html">Peripherals</a></li>
                 <li><a href="./games.html">Games</a></li>
                 <li><a href="./q&faq.html">Queries and FAQ</a></li> 
             </ol>

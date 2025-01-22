@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>       
-        <section ><img src="./images/logo4.png" id="logo"></section>
+        <section ><img src="./images/logo.png" id="logo"></section>
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
@@ -18,29 +18,77 @@
         </div>
         <nav class="menu">
             <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit" class="search-button">Search</button>
+                <input type="text" placeholder="Search...">
+                <button type="submit" class="search-button">Search</button>
             </div>
             <div class="navbar">
                 <ol>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
                     <li><a href="./upcominggames.html">Upcoming Games</a></li>
-                    <li><a href="./con&per.html">Consoles</a></li>
-                    <li><a href="./peripherals.html">Peripherals</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                        </div>
+                    </li>
                     <li><a href="./games.html">Games</a></li>
                     <li><a href="./q&faq.html">Queries and FAQ</a></li> 
                 </ol>
             </div>    
         </nav>
     </header>
-    <main class="content-grid">
+    <main>
         <section class="main-section">
-            <div class="overlay">
-                <div class="text-container">
-                    <h1>Welcome to GameVault</h1>
-                    <p>GameVault is not just a store. we are a massive gaming hub. Are you a PC gamer or a Console gamer? it doesn’t matter because we have something for everyone. From newly released games to latest and most advance consoles and accessories we are ready to empower your experience. Join with us today and take your gaming experience to a whole new level.</p>
-                </div>
+            <div class="main-content">
+                <h1>Welcome to GameVault</h1>
+                <p>GameVault is not just a store. we are a massive gaming hub. Are you a PC gamer or a Console gamer? it doesn't matter because we have something for everyone. From newly released games to latest and most advance consoles and peripherals, we are ready to empower your experience. Join with us today and take your gaming experience to a whole new level.</p>
+            </div>
+        </section>
+
+        <!-- Developer Note: PC Gaming Section -->
+    <!-- This section highlights our PC gaming offerings and services -->
+        <section class="sub-section"  id="game-section">
+            <img src="./images/gamesetup.png" alt="Gaming Setup" class="section-image">
+            <div class="section-content">
+                <h2>Nonstop Gaming</h2>
+                <p>Step into the world of gaming with our extensive collection of games. From latest releses to the most popular gaming titles, we've got everything you need.</p>
+                <p>Our team can help you choose the best games available for your preferd catogory, whether you're a competitive player or a casual player looking for the best experience. We offer a large collection of games for everyone.</p>
+            </div>
+        </section>
+
+    <!-- Developer Note: Console Gaming Section -->
+    <!-- This section showcases our console gaming inventory and services -->
+        <section class="sub-section" id="console-section">
+            <img src="./images/accessories.webp" alt="Gaming Peripherals" class="section-image">
+            <div class="section-content">
+                <h2>Play at Anywere</h2>
+                <p>Get the best possible experience with our large selection of gaming consoles and peripherals. We stock all major platforms including PlayStation, Xbox, and Nintendo and many more ensuring you'll find exactly what you're looking for.</p>
+                <p>Our dedicated hardware experts can guide you through the latest console releases, help you choose the perfect premium quality peripherals, and provide repair services. Enjoy limitless gaming experience with our best consoles and peripherals.</p>
+                <ol class="benefits-list">
+                    <li>Latest Console Releases</li>
+                    <li>Extensive Game Library</li>
+                    <li>Premium Quality Peripherals</li>
+                    <li>Expert Repair Services</li>
+                </ol>
+            </div>
+        </section>
+
+    <!-- Developer Note: Gaming Community Section -->
+    <!-- This section focuses on our community features and events -->
+        <section class="sub-section" id="community-section">
+            <img src="./images/gamecenter.jpeg" alt="Gaming Center" class="section-image">
+            <div class="section-content">
+                <h2>Our Gaming Community</h2>
+                <p>Be part of something bigger than just gaming. Our vibrant community hosts regular events, tournaments, and social gatherings. Connect with fellow gamers, share experiences, and participate in exclusive community-only promotions.</p>
+                <p>From local tournaments to online events, we provide platforms for gamers to showcase their skills, make new friends, and create lasting memories. Our community programs are open for everyone.</p>
+                <ul class="community-features">
+                    <li>Gaming Tournaments</li>
+                    <li>Community Events</li>
+                    <li>Exclusive Member Benefits</li>
+                    <li>Gaming Center</li>
+                </ul>
             </div>
         </section>
     </main>
@@ -54,8 +102,8 @@
             </ol>
         </section>
         <section class="social-media">
-            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
-            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>       
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>        <!--https://www.flaticon.com/search?word=social%20media-->
             <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
             <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
         </section>
@@ -64,9 +112,9 @@
         </section>
         <small>&copy;GameVault. All Right Reserved.</small></section>
     </footer>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
+    <script>     /*Hamburger Menu JavaScript Function*/
+        function toggleMenu() { 
+            const menu = document.querySelector('.menu');   
             menu.classList.toggle('active');
         }
     </script>    

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>       
-        <section ><img src="./images/logo2.png" id="logo"></section>
+        <section ><img src="./images/logo.png" id="logo"></section>
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
@@ -26,8 +26,13 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
                     <li><a href="./upcominggames.html">Upcoming Games</a></li>
-                    <li><a href="./consoles.html">Consoles</a></li>
-                    <li><a href="./peripherals.html">Peripherals</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                        </div>
+                    </li>
                     <li><a href="./games.html">Games</a></li>
                     <li><a href="./q&faq.html">Queries and FAQ</a></li> 
                 </ol>
@@ -38,14 +43,14 @@
         <section class="games-container">
             <article class="game-grid">
                 <div class="game-card">
-                    <img src="./images/newgame1.jpg" alt="Days Gone" class="game-image">
+                    <img src="./images/daysgone.jpg" alt="Days Gone" class="game-image" loading="lazy">
                     <div class="game-info">
                         <h2 class="game-title">Days Gone</h2>
                         <div class="game-details">
                             <p><span class="label">Release Date:</span> April 26, 2019</p>
-                            <p><span class="label">Platform:</span> PlayStation 4, Microsoft Windows</p>
-                            <p><span class="label">Genre:</span> Action-adventure game, Shooter video game, Survival horror</p>
-                            <p><span class="label">Price:</span> 70€</p>
+                            <p><span class="label">Platform:</span> PlayStation 4/5, PC</p>
+                            <p><span class="label">Genre:</span> Action-adventure game, Shooter, Survival horror</p>
+                            <p><span class="label">Price:</span> $67.90</p>
                         </div>
                     </div>
                     <div class="game-description">
@@ -55,14 +60,14 @@
                 </div>
     
                 <div class="game-card">
-                    <img src="./images/godofwar.jpg" alt="God of War" class="game-image">
+                    <img src="./images/godofwar.jpg" alt="God of War" class="game-image" loading="lazy">
                     <div class="game-info">
                         <h2 class="game-title">God of War</h2>
                         <div class="game-details">
                             <p><span class="label">Release Date:</span> April 20, 2018</p>
                             <p><span class="label">Platform:</span> PlayStation 4, PlayStation 5, PC</p>
                             <p><span class="label">Genre:</span> Action-adventure, RPG</p>
-                            <p><span class="label">Price:</span> 60€</p>
+                            <p><span class="label">Price:</span> $67.90</p>
                         </div>
                     </div>
                     <div class="game-description">
@@ -72,14 +77,14 @@
                 </div>
     
                 <div class="game-card">
-                    <img src="./images/horizonzerodawn.jpg" alt="Horizon Zero Dawn" class="game-image">
+                    <img src="./images/horizonzerodawn.jpg" alt="Horizon Zero Dawn" class="game-image" loading="lazy">
                     <div class="game-info">
                         <h2 class="game-title">Horizon Zero Dawn</h2>
                         <div class="game-details">
                             <p><span class="label">Release Date:</span> February 28, 2017</p>
                             <p><span class="label">Platform:</span> PlayStation 4, PC</p>
                             <p><span class="label">Genre:</span> Action RPG, Open World</p>
-                            <p><span class="label">Price:</span> 50€</p>
+                            <p><span class="label">Price:</span> $67.90</p>
                         </div>
                     </div>
                     <div class="game-description">
@@ -89,53 +94,53 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="./images/newgame1.jpg" alt="game4" class="game-iamge">
+                    <img src="./images/acmirage.jpg" alt="Assassin's Creed Mirage" class="game-image" loading="lazy">
                     <div class="game-info">
-                        <h2 class="game-title">New Game 4</h2>
+                        <h2 class="game-title">Assassin's Creed Mirage</h2>
                         <div class="game-details">
-                            <p><span class="label">Release Date:</span> February 28, 2017</p>
-                            <p><span class="label">Platform:</span> PlayStation 4, PC</p>
-                            <p><span class="label">Genre:</span> Action RPG, Open World</p>
-                            <p><span class="label">Price:</span> 50€</p>
+                            <p><span class="label">Release Date:</span> October 5, 2024</p>
+                            <p><span class="label">Platform:</span> PlayStation 5, PC, Xbox X</p>
+                            <p><span class="label">Genre:</span> Action-Adventure, Open World</p>
+                            <p><span class="label">Price:</span> $64.90</p>
                         </div>
                     </div>
                     <div class="game-description">
-                        <h2 class="description-title"></h2>
-                        <p class="description-text">Experience Aloy's entire legendary quest to unravel the mysteries of a world ruled by deadly Machines. An outcast from her tribe, the young hunter fights to uncover her past.</p>
+                        <h2 class="description-title">Assassin's Creed Mirage</h2>
+                        <p class="description-text">Join Basim, a street thief turned master assassin, on a thrilling journey through the streets of 9th-century Baghdad. Uncover hidden truths, refine your stealth skills, and embrace the creed as you navigate a world of danger, intrigue, and transformation.</p>
                     </div>
                 </div>
 
                 <div class="game-card">
-                    <img src="./images/newgame1.jpg" alt="game4" class="game-iamge">
+                    <img src="./images/eldenring.jpg" alt="Elden Ring" class="game-image" loading="lazy">
                     <div class="game-info">
-                        <h2 class="game-title">New Game 4</h2>
+                        <h2 class="game-title">Elden Ring</h2>
                         <div class="game-details">
-                            <p><span class="label">Release Date:</span> February 28, 2017</p>
-                            <p><span class="label">Platform:</span> PlayStation 4, PC</p>
-                            <p><span class="label">Genre:</span> Action RPG, Open World</p>
-                            <p><span class="label">Price:</span> 50€</p>
+                            <p><span class="label">Release Date:</span> February 22, 2022</p>
+                            <p><span class="label">Platform:</span> PlayStation 4/5, PC, Xbox X</p>
+                            <p><span class="label">Genre:</span> Action-adventure, RPG, Open World</p>
+                            <p><span class="label">Price:</span> $64.90</p>
                         </div>
                     </div>
                     <div class="game-description">
-                        <h2 class="description-title"></h2>
-                        <p class="description-text">Experience Aloy's entire legendary quest to unravel the mysteries of a world ruled by deadly Machines. An outcast from her tribe, the young hunter fights to uncover her past.</p>
+                        <h2 class="description-title">Elden Ring</h2>
+                        <p class="description-text">Rise, Tarnished, and journey through the vast Lands Between to reclaim the Elden Ring and become Elden Lord. Face powerful foes, uncover hidden mysteries, and forge your path in a world shaped by ambition and ruin.</p>
                     </div>
                 </div>
                 
                 <div class="game-card">
-                    <img src="./images/newgame1.jpg" alt="game4" class="game-iamge">
+                    <img src="./images/warzone.webp" alt="Warzone" class="game-image" loading="lazy">
                     <div class="game-info">
-                         <h2 class="game-title">New Game 4</h2>
+                         <h2 class="game-title">Call of Duty Warzone</h2>
                          <div class="game-details">
-                            <p><span class="label">Release Date:</span> February 28, 2017</p>
-                            <p><span class="label">Platform:</span> PlayStation 4, PC</p>
-                            <p><span class="label">Genre:</span> Action RPG, Open World</p>
-                            <p><span class="label">Price:</span> 50€</p>
+                            <p><span class="label">Release Date:</span> March 10, 2020</p>
+                            <p><span class="label">Platform:</span> PlayStation 4/5, PC, Xbox X</p>
+                            <p><span class="label">Genre:</span> FPS, Battle Royal, Multiplayer</p>
+                            <p><span class="label">Price:</span> $64.90</p>
                         </div>
                     </div>
                     <div class="game-description">
-                         <h2 class="description-title"></h2>
-                         <p class="description-text">Experience Aloy's entire legendary quest to unravel the mysteries of a world ruled by deadly Machines. An outcast from her tribe, the young hunter fights to uncover her past.</p>
+                         <h2 class="description-title">Call of Duty Warzone</h2>
+                         <p class="description-text">Drop into Call of Duty: Warzone, a massive free-to-play battleground where strategy, skill, and survival are key. Fight solo or squad up, scavenge gear, and outlast opponents in an ever-shrinking combat zone to claim victory.</p>
                     </div>
                 </div>
             </article>

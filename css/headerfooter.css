@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #333;
+    background-color: #101010;
 }
 
 
@@ -60,13 +60,53 @@ header {
     font-weight: bold;
     padding: 8px 13px;
     border-radius: 15px;
-    background-color: #302f2f;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .navbar ol li a:hover {
-    background-color: #1e90ff;
+    color: #1e90ff;
     transform: scale(1.1);
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the dropdown menu */
+    background-color: #302f2f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    text-align: center;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #1e90ff;
+}
+
+/* Modify the existing navbar styles to accommodate dropdown */
+.navbar ol li.dropdown a.dropbutton {
+    padding-right: 20px;
 }
 
 .search-container input[type="text"] {
