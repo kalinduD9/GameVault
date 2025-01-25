@@ -97,18 +97,14 @@
 }
 
 /* Section-specific backgrounds */
-#game-section {
+#game-section,
+#community-section {
     background-color: #151515;
 }
 
 #console-section {
     background-color: #1a1a1a;
 }
-
-#community-section {
-    background-color: #151515;
-}
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -138,10 +134,13 @@
     .main-section {
         height: auto; /* Allow height to adjust */
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     .main-section .main-content {
-        padding: 15px;
+        padding: 20px;
+        text-align: center;
+        min-height: auto;
     }
 
     .main-content h1 {
@@ -150,48 +149,86 @@
 
     .main-content p {
         font-size: 1rem;
+        line-height: 1.5;
+        margin: 10px auto;
+        width: 90%;
     }
 
     .sub-section {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 30px;
+        padding: 40px 15px;
     }
 
     .section-image {
+        width: 80%;
         max-width: 100%; /* Full width */
+        margin: 0 autp;
     }
 
     .section-content {
         width: 100%;
+        padding: 0 10px;
     }
 
     .section-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
     }
 
     .section-content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .benefits-list,
+    .community-features {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    .benefits-list li,
+    .community-features li {
+        font-size: 0.95rem;
+        line-height: 1,4;
     }
 }
 
 @media (max-width: 480px) {
     .main-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
     }
 
     .main-content p {
         font-size: 0.9rem;
+        width: 100%;
     }
 
     .section-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-top: 10px;
     }
 
     .section-content p {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
 
     .sub-section {
         padding: 20px 10px;
+    }
+
+    .section-image {
+        width: 100%;
+    }
+
+    .benefits-list li,
+    .community-features li {
+        font-size: 0.85rem;
+        line-height: 1.3;
     }
 }
