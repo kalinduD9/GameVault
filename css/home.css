@@ -165,7 +165,7 @@
     .section-image {
         width: 80%;
         max-width: 100%; /* Full width */
-        margin: 0 autp;
+        margin: 0 auto;
     }
 
     .section-content {
@@ -193,7 +193,7 @@
     .benefits-list li,
     .community-features li {
         font-size: 0.95rem;
-        line-height: 1,4;
+        line-height: 1.4;
     }
 }
 
