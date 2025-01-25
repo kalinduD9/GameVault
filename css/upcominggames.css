@@ -71,7 +71,6 @@
 
 .new-game:hover .date {
     opacity: 1;
-    pointer-events: auto;
 }
 
 /* Media Queries for Responsiveness */
