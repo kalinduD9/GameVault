@@ -68,7 +68,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #47A3F;
+    background-color: #47A3FF;
     color: #0A0A0A;
     font-weight: bold;
 }
@@ -82,7 +82,7 @@ table tbody tr:nth-child(even) {
 }
 
 table tfoot td {
-    background-color: #47A3F;
+    background-color: #47A3FF;
     color: #0A0A0A;
     font-weight: bold;
     text-align: center;
