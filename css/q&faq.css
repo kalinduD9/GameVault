@@ -87,8 +87,8 @@
 }
 
 .submit-button {
-    background-color: #1e90ff;
-    color: #fff;
+    background-color: #47A3FF;
+    color: #0A0A0A;
 }
 
 .submit-button:hover {
@@ -97,7 +97,7 @@
 
 .cancel-button {
     background-color: #444;
-    color: #fff;
+    color: #0A0A0A;
 }
 
 .cancel-button:hover {
