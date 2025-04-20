@@ -1,0 +1,145 @@
+/* Reset base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: #EAEAEA;
+}
+
+/* Main container */
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Main heading */
+main h1 {
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.order-summary {
+    border: 2px solid #2a2a2a;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align content */
+}
+
+.order-summary h2 {
+    font-size: 1.5rem;
+    color: #47A3FF;
+    margin-bottom: 10px;
+}
+
+.order-summary #order-details p {
+    font-size: 1rem;
+    color: #EAEAEA;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.order-summary #grand-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ff99;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Section heading */
+form h2 {
+    color: #47A3FF;
+    font-size: 1.5rem;
+    margin: 25px 0 10px;
+}
+
+/* Form label and inputs */
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+form input:focus {
+    outline: none;
+    background-color: #333;
+    border: 1px solid #1e90ff;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    display: block;
+    width: 40%;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    margin: 30px auto 0; /* Center the button horizontally */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+    background: #155a8a; /* Adjusted darker blue for click effect */
+}
+
+form button[type="submit"]:hover {
+    background-color: #187bcd;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    form h2 {
+        font-size: 1.3rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"] {
+        font-size: 0.95rem;
+    }
+
+    form button[type="submit"] {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,119 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: #EAEAEA;
+}
+
+/* Main Header */
+.cart-main .cart-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1e90ff;
+}
+
+/* Cart Table */
+.cart-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.cart-table th {
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.cart-table td {
+    font-size: 1rem;
+}
+
+.cart-table .empty-cart-message {
+    text-align: center;
+    padding: 30px 0;
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+/* Grand Total Row */
+.cart-table tfoot td.total {
+    font-weight: bold;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+#grand-total {
+    font-weight: bold;
+    background-color: #1e1e1e;
+    color: #00ff99;
+}
+
+/* Buttons */
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cart-buttons .cart-button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.cart-buttons .cart-button:hover {
+    background-color: #187bcd;
+}
+
+.cart-buttons .cart-button:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+    background-color: #1569a8; /* Darker blue for click effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-table th, .cart-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #buy-now,
+    #confirm,
+    #apply-favorites {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .cart-main .cart-title {
+        font-size: 2rem;
+    }
+}

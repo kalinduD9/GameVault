@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="icon" type="image/png" href="/GameVault/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/GameVault/favicon.svg">
+    <link rel="shortcut icon" href="/GameVault/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/GameVault/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="GameVault">
+    <link rel="manifest" href="/GameVault/site.webmanifest">
+    <link rel="stylesheet" href="./css/pcparts.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>       
+        <section ><img src="./images/logo.png" id="logo" alt="Logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                            <a href="./pcparts.html">PC Parts</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                    <li><a href="./favourites.html">Cart</a></li>
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main class="container">
+        <section class="category" id="processors">
+            <h2>Processors</h2>
+            <div class="grid-container">
+            <div class="item" id="processor-1">
+                <img src="./images/parts/proccessor1.jpg" alt="Intel Core Ultra 9 desktop processor">
+                <p>Intel Core Ultra 9</p>
+                <p class="item-price">Price: $599.99</p>
+                <button id="add-processor-1">Add to Favourites</button>
+            </div>
+            <div class="item" id="processor-2">
+                <img src="./images/parts/proccessor2.jpg" alt="Intel Core i7 desktop processor">
+                <p>Intel Core i7</p>
+                <p class="item-price">Price: $499.99</p>
+                <button id="add-processor-2">Add to Favourites</button>
+            </div>
+            <div class="item" id="processor-3">
+                <img src="./images/parts/proccessor3.jpg" alt="Intel Core i5 desktop processor">
+                <p>Intel Core i5</p>
+                <p class="item-price">Price: $399.99</p>
+                <button id="add-processor-3">Add to Favourites</button>
+            </div>
+            <div class="item" id="processor-4">
+                <img src="./images/parts/proccessor4.jpeg" alt="AMD Ryzen 9 desktop processor">
+                <p>AMD Ryzen 9</p>
+                <p class="item-price">Price: $549.99</p>
+                <button id="add-processor-4">Add to Favourites</button>
+            </div>
+            <div class="item" id="processor-5">
+                <img src="./images/parts/proccessor5.jpg" alt="AMD Ryzen 5 desktop processor">
+                <p>AMD Ryzen 5</p>
+                <p class="item-price">Price: $349.99</p>
+                <button id="add-processor-5">Add to Favourites</button>
+            </div>
+            <div class="item" id="processor-6">
+                <img src="./images/parts/proccessor6.jpeg" alt="AMD Ryzen 7 desktop processor">
+                <p>AMD Ryzen 7</p>
+                <p class="item-price">Price: $449.99</p>
+                <button id="add-processor-6">Add to Favourites</button>
+            </div>
+            </div>
+        </section>
+        <section class="category" id="graphic-cards">
+            <h2>Graphic Cards</h2>
+            <div class="grid-container">
+            <div class="item" id="graphic-card-1">
+                <img src="./images/parts/gpu1.webp" alt="NVIDIA GeForce RTX 5090 Founders Edition Graphic Card">
+                <p>NVIDIA GeForce RTX 5090</p>
+                <p class="item-price">Price: $3500</p>
+                <button id="add-graphic-card-1">Add to Favourites</button>
+            </div>
+            <div class="item" id="graphic-card-2">
+                <img src="./images/parts/gpu2.jpg" alt="GIGABYTE RTX 4070 Super Gaming OC Graphic Card">
+                <p>GIGABYTE RTX 4070 Super Gaming OC</p>
+                <p class="item-price">Price: $3000</p>
+                <button id="add-graphic-card-2">Add to Favourites</button>
+            </div>
+            <div class="item" id="graphic-card-3">
+                <img src="./images/parts/gpu3.png" alt="ASUS ProArt GeForce RTX 4060 Graphic Card">
+                <p>ASUS ProArt GeForce RTX 4060</p>
+                <p class="item-price">Price: $2500</p>
+                <button id="add-graphic-card-3">Add to Favourites</button>
+            </div>
+            <div class="item" id="graphic-card-4">
+                <img src="./images/parts/gpu4.jpg" alt="ASUS TUF Gaming Radeon RX 7900 XTX OC Edition Graphic Card">
+                <p>ASUS TUF Gaming Radeon RX 7900 XTX</p>
+                <p class="item-price">Price: $2000</p>
+                <button id="add-graphic-card-4">Add to Favourites</button>
+            </div>
+            <div class="item" id="graphic-card-5">
+                <img src="./images/parts/gpu5.png" alt="Gigabyte Radeon RX 9070 XT Graphic Card">
+                <p>GIGABYTE Radeon RX 9070 XT</p>
+                <p class="item-price">Price: $1800</p>
+                <button id="add-graphic-card-5">Add to Favourites</button>
+            </div>
+            <div class="item" id="graphic-card-6">
+                <img src="./images/parts/arcb580.jpg" alt="Intel Arc B580 Desktop Graphic Card">
+                <p>Intel Arc  B580</p>
+                <p class="item-price">Price: $1300</p>
+                <button id="add-graphic-card-6">Add to Favourites</button>
+            </div>
+            </div>
+        </section>
+        <section class="category" id="motherboards">
+            <h2>Motherboards</h2>
+            <div class="grid-container">
+            <div class="item" id="motherboard-1">
+                <img src="./images/parts/motherboard1.jpg" alt="ASRock X670E AMD Motherboard">
+                <p>ASRock X670E(AMD)</p>
+                <p class="item-price">Price: $600</p>
+                <button id="add-motherboard-1">Add to Favourites</button>
+            </div>
+            <div class="item" id="motherboard-2">
+                <img src="./images/parts/motherboard2.jpeg" alt="Gigabyte Aorus X870 AMD Motherboard"> 
+                <p>Gigabyte Aorus X870(AMD)</p>
+                <p class="item-price">Price: $550</p>
+                <button id="add-motherboard-2">Add to Favourites</button>
+            </div>
+            <div class="item" id="motherboard-3">
+                <img src="./images/parts/motherboard3.jpg" alt="ASUS ROG Strix Z790-E Intel Motherboard">
+                <p>ASUS ROG Strix Z790-E Gaming WiFi II(Intel)</p>
+                <p class="item-price">Price: $500</p>
+                <button id="add-motherboard-3">Add to Favourites</button>
+            </div>
+            <div class="item" id="motherboard-4">
+                <img src="./images/parts/motherboard4.png" alt="Gigabyte Z790 AORUS XTREME Intel Motherboard">
+                <p>Gigabyte Z790 AORUS XTREME(Intel)</p>
+                <p class="item-price">Price: $450</p>
+                <button id="add-motherboard-4">Add to Favourites</button>
+            </div>
+            <div class="item" id="motherboard-5">
+                <img src="./images/parts/motherboard5.jpg" alt="ASUS ROG Maximus Z790 Dark Hero Intel Motherboard">
+                <p>ASUS ROG Maximus Z790 Dark Hero(Intel)</p>
+                <p class="item-price">Price: $400</p>
+                <button id="add-motherboard-5">Add to Favourites</button>
+            </div>
+            <div class="item" id="motherboard-6">
+                <img src="./images/parts/motherboard6.jpg" alt="ASRock B760M PG Sonic Motherboard">
+                <p>ASRock B760M PG Sonic(Intel)</p>
+                <p class="item-price">Price: $350</p>
+                <button id="add-motherboard-6">Add to Favourites</button>
+            </div>
+            </div>
+        </section>
+        <section class="category" id="memory">
+            <h2>Memory (RAM)</h2>
+            <div class="grid-container">
+            <div class="item" id="ram-1">
+                <img src="./images/parts/ram1.jpg" alt="CROSAIR Vengeance Desktop RAM">
+                <p>CROSAIR Vengeance</p>
+                <p class="item-price">Price: $150</p>
+                <button id="add-ram-1">Add to Favourites</button>
+            </div>
+            <div class="item" id="ram-2">
+                <img src="./images/parts/ram2.webp" alt="CROSAIR Dominator Desktop RAM">
+                <p>CROSAIR Dominator</p>
+                <p class="item-price">Price: $130</p>
+                <button id="add-ram-2">Add to Favourites</button>
+            </div>
+            <div class="item" id="ram-3">
+                <img src="./images/parts/ram3.jpg" alt="Acer Predator Hera Desktop RAM">
+                <p>Acer Predator Hera</p>
+                <p class="item-price">Price: $110</p>
+                <button id="add-ram-3">Add to Favourites</button>
+            </div>
+            <div class="item" id="ram-4">
+                <img src="./images/parts/ram4.jpg" alt="G.SKILL Trident Z Desktop RAM"> 
+                <p>G.SKILL Trident Z</p>
+                <p class="item-price">Price: $90</p>
+                <button id="add-ram-4">Add to Favourites</button>
+            </div>
+            </div>
+        </section>
+        <section class="category" id="storage-devices">
+            <h2>Storage Devices</h2>
+            <div class="grid-container">
+            <div class="item" id="storage-1">
+                <img src="./images/parts/storage1.webp" alt=" Samsung 990 Pro NVMe SSD (Gen 4)">
+                <p>Samsung 990 Pro NVMe SSD (Gen 4)</p>
+                <p class="item-price">Price: $260</p>
+                <button id="add-storage-1">Add to Favourites</button>
+            </div>
+            <div class="item" id="storage-2">
+                <img src="./images/parts/storage2.webp" alt="WD Black SN850X NVMe SSD">
+                <p>WD Black SN850X NVMe SSD</p>
+                <p class="item-price">Price: $240</p>
+                <button id="add-storage-2">Add to Favourites</button>
+            </div>
+            <div class="item" id="storage-3">
+                <img src="./images/parts/storage3.jpg" alt="Crucial T700 Gen 5 NVMe SSD">
+                <p>Crucial T700 Gen 5 NVMe SSD</p>
+                <p class="item-price">Price: $230</p>
+                <button id="add-storage-3">Add to Favourites</button>
+            </div>
+            <div class="item" id="storage-4">
+                <img src="./images/parts/storage4.webp" alt="Samsung T7 Shield Portable SSD">
+                <p>Samsung T7 Shield Portable SSD</p>
+                <p class="item-price">Price: $200</p>
+                <button id="add-storage-4">Add to Favourites</button>
+            </div>
+            <div class="item" id="storage-5">
+                <img src="./images/parts/storage5.jpeg" alt="Seagate Barracuda 4TB HDD">
+                <p>Seagate Barracuda 4TB HDD</p>
+                <p class="item-price">Price: $180</p>
+                <button id="add-storage-5">Add to Favourites</button>
+            </div>
+            <div class="item" id="storage-6">
+                <img src="./images/parts/storage6.png" alt="Western Digital Blue SN580 NVMe SSD">
+                <p>Western Digital Blue SN580 NVMe SSD</p>
+                <p class="item-price">Price: $150</p>
+                <button id="add-storage-6">Add to Favourites</button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>       
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>        <!--https://www.flaticon.com/search?word=social%20media-->
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small>
+    </footer>
+    <script>     /*Hamburger Menu JavaScript Function*/
+        function toggleMenu() { 
+            const menu = document.querySelector('.menu');   
+            menu.classList.toggle('active');
+        }
+    </script>  
+    <script src="./main.js"></script>  
+</body>
+</html>
