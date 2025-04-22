@@ -31,6 +31,30 @@ body {
     margin-right: auto;
 }
 
+/* Style for Number Input Fields */
+.cart-table input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-table input[type="number"]:hover {
+    border-color: #1e90ff;
+}
+
+/* Hide spin buttons for all browsers */
+.cart-table input[type="number"] {
+    appearance: none; /* Standard property to hide spin buttons */
+    margin: 0;
+}
+
 .cart-table th,
 .cart-table td {
     padding: 15px;
@@ -99,21 +123,56 @@ body {
     background-color: #1569a8; /* Darker blue for click effect */
 }
 
+.cart-buttons .cart-button:disabled {
+    background-color: #555 !important; /* dull gray background */
+    color: #aaa !important;           /* dull text */
+    opacity: 0.6;                     /* slightly transparent for visual cue */
+    transform: none !important;       /* cancel the active scaling effect */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .cart-table th, .cart-table td {
+    .cart-main .cart-title {
+        font-size: 2rem;
+    }
+
+    .cart-table {
+        width: 95%;
+    }
+
+    .cart-table th,
+    .cart-table td {
         padding: 10px;
         font-size: 0.9rem;
     }
 
-    #buy-now,
-    #confirm,
-    #apply-favorites {
-        width: 90%;
-        font-size: 1rem;
+    .cart-buttons {
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        margin: 20px 10px;
+    }
+    .cart-buttons .cart-button {
+        width: 40%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .cart-main .cart-title {
+        font-size: 1.8rem;
     }
 
-    .cart-main .cart-title {
-        font-size: 2rem;
+    .cart-table th,
+    .cart-table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .cart-buttons .cart-button {
+        font-size: 0.8rem;
+        padding: 8px;
     }
 }

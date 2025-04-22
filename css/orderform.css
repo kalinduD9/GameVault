@@ -118,6 +118,26 @@ form button[type="submit"]:hover {
     background-color: #187bcd;
 }
 
+#notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 16px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+    font-family: sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#notification.visible {
+    display: block;
+}
+
+
 /* Responsive layout */
 @media (max-width: 768px) {
     main {
@@ -142,4 +162,12 @@ form button[type="submit"]:hover {
     form button[type="submit"] {
         font-size: 1rem;
     }
-}
+
+    #notification {
+        bottom: 5px;
+        right: 5px;
+        left: 5px;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+}    
