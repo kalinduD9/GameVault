@@ -1,17 +1,6 @@
 // Wait until the HTML is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Notification element for already existing items and successful purchases
-    const notification = document.createElement('div');
-    notification.id = 'notification';
-    document.body.appendChild(notification);
-
-    // Massage for empty favoirites
-    const MESSAGE = {
-        EMPTY_FAV: 'Your favourites are currently empty.',
-    };
-
-
     // Button references
     const applyButton = document.getElementById('apply-favorites');
     const confirmButton = document.getElementById('confirm');
@@ -21,6 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (applyButton) applyButton.disabled = false;
     if (confirmButton) confirmButton.disabled = true;
     if (buyNowButton) buyNowButton.disabled = true;
+
+    // Notification element for already existing items and successful purchases
+    const notification = document.createElement('div');
+    notification.id = 'notification';
+    document.body.appendChild(notification);
+  
+    // Massage for empty favoirites
+    const MESSAGE = {
+         EMPTY_FAV: 'Your favourites are currently empty.',
+    };
 
     // Function to handle adding items to favourites
     function addToFavourites(event) {
