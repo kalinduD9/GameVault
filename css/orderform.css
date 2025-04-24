@@ -98,7 +98,7 @@ form button[type="submit"] {
     display: block;
     width: 40%;
     background-color: #1e90ff;
-    color: white;
+    color: black;
     font-size: 1.1rem;
     padding: 12px;
     margin: 30px auto 0; /* Center the button horizontally */
