@@ -78,8 +78,8 @@ body {
 button {
     padding: 0.5rem 1rem;
     border: none;
-    background: #28a745;
-    color: white;
+    background: #47A3FF;
+    color: black;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9rem;
@@ -88,11 +88,11 @@ button {
 
 button:active {
     transform: scale(0.95); /* Slightly shrink the button on click */
-    background: #218838; /* Darker green for click effect */
+    background: #0056b3; 
 }
 
 button:hover {
-    background: #218838; /* Darker green */
+    background: #0056b3; 
 }
 
 /* Styles for item already exists notification */
