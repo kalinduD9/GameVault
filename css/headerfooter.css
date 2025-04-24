@@ -211,6 +211,123 @@ small {
 }
 
 /* Media Queries for Header - Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Header Adjustments */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    /* Ensure hamburger menu is visible */
+    .hamburger {
+        display: flex;
+        z-index: 1003;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Ensure menu is hidden initially */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #151515;
+        z-index: 1002;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    #logo {
+        max-height: 130px;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ol {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar ol li {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar ol li a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Search Container Adjustments */
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .search-container input[type="text"] {
+        width: 80%;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+
+    .search-container .search-button {
+        width: 50%;
+        padding: 8px 15px;
+        margin: 10px 0;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .menu-footer ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-footer ol li {
+        margin: 10px 0;
+    }
+
+    #footer-logo {
+        max-height: 90px;
+    }
+
+    /* Dropdown Menu Adjustments */
+    .dropdown-content {
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 140px;
+    }
+}
+
 @media (max-width: 768px) {
     /* Hamburger Menu */
     .hamburger {

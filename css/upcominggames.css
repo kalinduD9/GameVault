@@ -72,42 +72,64 @@
 .new-game:hover .date {
     opacity: 1;
 }
-
 /* Media Queries for Responsiveness */
 
 /* Small screens (mobile) */
 @media (max-width: 600px) {
     .text-container {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-top: 10px;
     }
 
     .image-container {
-        gap: 10px;
+        gap: 8px;
         padding: 0 5px;
     }
 
     .new-game {
-        width: 90%; /* Full width for smaller screens */
+        width: 100%; /* Full width for smaller screens */
         height: auto;
+        border-radius: 10px;
     }
 
     .new-game img {
+        width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 
     .date {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        padding: 5px;
     }
 }
 
 /* Medium screens (tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
+    .text-container {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .image-container {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
     .new-game {
-        width: 300px; /* Smaller width for tablets */
-        height: 200px;
+        width: 320px; /* Adjusted width for tablets */
+        height: 220px;
+        border-radius: 12px;
+    }
+
+    .new-game img {
+        width: 320px;
+        height: 220px;
+        border-radius: 12px;
     }
 
     .date {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        padding: 8px;
     }
 }

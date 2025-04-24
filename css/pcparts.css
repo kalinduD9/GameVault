@@ -78,7 +78,7 @@ body {
 button {
     padding: 0.5rem 1rem;
     border: none;
-    background: #47A3FF;
+    background: #47a3ff;
     color: black;
     border-radius: 5px;
     cursor: pointer;
@@ -88,11 +88,11 @@ button {
 
 button:active {
     transform: scale(0.95); /* Slightly shrink the button on click */
-    background: #0056b3; 
+    background: #0056b3; /* Darker blue for click effect */
 }
 
 button:hover {
-    background: #0056b3; 
+    background: #0056b3; /* Darker blue */
 }
 
 /* Styles for item already exists notification */
